@@ -1,10 +1,19 @@
 $(document).ready(function () {
     ymaps.ready(init);
+    var map;
     function init() {
-        var map = new ymaps.Map("map", {
+        map = new ymaps.Map("map", {
             center: [55.753215, 37.622504],
             zoom: 17,
         });
+        var myPlacemark_106 = new ymaps.Placemark([55.753215, 37.622504], {
+            balloonContentHeader: "", //3718                  balloonContentBody: '', //Описание объекта
+            balloonContentFooter: "",
+            hintContent: "", //Кликните для более подробной информации
+        });
+
+        //Показываем все метки на карте
+        map.geoObjects.add(myPlacemark_106);
     }
 
     $("[data-modal-close]").click(function () {
@@ -32,7 +41,18 @@ $(document).ready(function () {
             },
             submitHandler: function (form) {
                 //Отправляем AJAX
-                $('[data-modal="2"]').show();
+                var name = $(".modal__name").val();
+                var phone = $(".modal__phone").val();
+                $.ajax({
+                    url: "https://khasenov.ru/maski/telegram.php",
+                    type: "post",
+                    data: { name: name, phone: phone },
+                    dataType: "json",
+                    success: function () {
+                        $('[data-modal="2"]').show();
+                    },
+                });
+
                 //form.submit();
             },
         });
