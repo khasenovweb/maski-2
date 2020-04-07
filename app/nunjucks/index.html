@@ -1,0 +1,160 @@
+{% set title = 'Маски оптом' %} {% extends 'layouts/_main.html' %} {% block
+content %}
+<!-- hero -->
+<div class="hero">
+    <div class="container">
+        <div class="hero__head">
+            <a href="/" class="hero__head__logo">
+                <img src="img/logo.png" alt="" />
+            </a>
+            <div class="hero__head__phoneblock">
+                <a href="tel:+7 (951) 451-8479" class="hero__head__phone"
+                    >+7 (951) 451-8479</a
+                >
+                <div class="hero__head__phone__desc">с 8:00 до 21:00 МСК</div>
+            </div>
+        </div>
+        <h1 class="hero__title">
+            Защитные маски для лица из ткани оптом и в розницу по всей России
+        </h1>
+        <ol class="hero__preim">
+            <li>Быстрая доставка</li>
+            <li>Товар в наличии</li>
+            <li>Высокое качество</li>
+        </ol>
+        <button class="btn" data-modal-show="1">Узнать условия и цены</button>
+    </div>
+</div>
+<!--END hero -->
+
+<!-- photo -->
+<div class="photo">
+    <div class="container">
+        <div class="section__title">Фото наших масок</div>
+        <div class="photo__items">
+            <a
+                data-src="../img/1.jpg"
+                data-fancybox="1"
+                href=""
+                class="photo__item"
+                style="background-image: url(../img/1.jpg);"
+            ></a>
+            <a
+                data-src="../img/2.jpg"
+                data-fancybox="1"
+                href=""
+                class="photo__item"
+                style="background-image: url(../img/2.jpg);"
+            ></a>
+            <a
+                data-src="../img/3.jpg"
+                data-fancybox="1"
+                href=""
+                class="photo__item"
+                style="background-image: url(../img/3.jpg);"
+            ></a>
+            <a
+                data-src="../img/4.jpg"
+                data-fancybox="1"
+                href=""
+                class="photo__item"
+                style="background-image: url(../img/4.jpg);"
+            ></a>
+            <a
+                data-src="../img/5.jpg"
+                data-fancybox="1"
+                data-src="../img/5.jpg"
+                href=""
+                class="photo__item"
+                style="background-image: url(../img/5.jpg);"
+            ></a>
+            <a
+                data-src="../img/6.jpg"
+                data-fancybox="1"
+                href=""
+                class="photo__item"
+                style="background-image: url(../img/6.jpg);"
+            ></a>
+            <!-- <a
+                data-src="../img/7.jpg"
+                data-fancybox="1"
+                href=""
+                class="photo__item"
+                style="background-image: url(../img/7.jpg);"
+            ></a> -->
+        </div>
+    </div>
+</div>
+<!--END photo -->
+
+<!-- contacts -->
+<div class="contacts">
+    <div class="container">
+        <div class="section__title">Наши контакты</div>
+        <div class="contacts__content">
+            <div class="contacts__left">
+                <ul class="contacts__list">
+                    <li class="contacts__list__label">Телефон:</li>
+                    <li>
+                        <a href="tel:+7 (951) 451-8479">+7 (951) 451-8479</a>
+                    </li>
+                    <li class="contacts__list__label">E-mail:</li>
+                    <li>
+                        <a href="mailto:example@mail.ru">example@mail.ru</a>
+                    </li>
+                    <li class="contacts__list__label">Адрес:</li>
+                    <li>
+                        <a href="mailto:example@mail.ru"
+                            >г. Москва, ул. Ленина 25а</a
+                        >
+                    </li>
+                </ul>
+                <button class="btn" data-modal-show="1">
+                    Заказать обратный звонок
+                </button>
+            </div>
+            <div class="contacts__map" id="map"></div>
+        </div>
+    </div>
+</div>
+<!--END contacts -->
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer__copyright">Маски оптом по всей России</div>
+    </div>
+</div>
+<!--END footer -->
+
+<!-- modal -->
+<div class="modal__wrapper" data-modal="1">
+    <div class="modal">
+        <div class="modal__close" data-modal-close="1">
+            <img src="img/modal__close.svg" alt="" />
+        </div>
+        <div class="modal__title">Заказать обратный звонок</div>
+        <form action="" data-validate>
+            <input name="name" type="text" placeholder="Ваше имя" />
+            <input
+                class="modal__phone"
+                name="phone"
+                type="text"
+                placeholder="Ваше телефон"
+            />
+            <button class="btn">Отправить</button>
+        </form>
+    </div>
+</div>
+<!--END modal -->
+<!-- modal -->
+<div class="modal__wrapper" data-modal="2">
+    <div class="modal">
+        <div class="modal__close" data-modal-close="2">
+            <img src="img/modal__close.svg" alt="" />
+        </div>
+        <div class="modal__title">Ваша заявка отправлена!</div>
+    </div>
+</div>
+<!--END modal -->
+{% endblock %}
