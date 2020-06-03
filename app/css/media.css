@@ -1,8 +1,6 @@
 @media screen and (max-width: 900px) {
   .hero__preim {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
   }
   .hero__preim li {
     margin: 15px;
@@ -51,10 +49,8 @@
     font-size: 30px;
   }
   .hero__head__logo {
-    display: -webkit-box;
     display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .hero__head__logo img {
     width: 70%;
